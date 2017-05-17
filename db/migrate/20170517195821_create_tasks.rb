@@ -5,7 +5,7 @@ class CreateTasks < ActiveRecord::Migration[5.0]
       t.text :description
       t.string :photo
       t.string :stage
-      t.fixnum :emergency
+      t.integer :emergency
 
       t.timestamps
     end
