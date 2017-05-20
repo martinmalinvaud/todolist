@@ -1,6 +1,10 @@
-show.html.erb
-<h2><%= @restaurant.name %></h2>
-<p><%= @restaurant.address %></p>
-<%= link_to "Delete", task_path(task),
-      method: :delete,
-      data: { confirm: "Are you sure?" } %>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+      <%= render 'card' %>
+    </div>
+    <div class="col-sm-6 col-sm-offset-3">
+      <%= link_to "index", tasks_path, class: "btn btn-primary" %>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+<h2><%= @task.name %></h2>
+<p><%= @task.description %></p>
+<div class="text-center">
+  <%= link_to "Delete", task_path(@task),
+    method: :delete,
+    data: { confirm: "Sur de supprimer la Tache ?" },
+    class: "btn btn-danger"
+  %>
+</div>
